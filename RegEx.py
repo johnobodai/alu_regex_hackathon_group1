@@ -9,7 +9,7 @@ f = Figlet(font='standard')
 print(colored(f.renderText('RegEx Made Easy'), 'white'))
 
 def Jokes(txt):
-    Joke = (re.search("Why did the \w+? Because \w+", txt))
+    Joke = (re.search("Why did the \w.+? Because \w+", txt))
     if Joke:
         print("{} was a halarious joke, hahaha.")
     else:
