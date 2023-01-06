@@ -9,7 +9,11 @@ f = Figlet(font='standard')
 print(colored(f.renderText('RegEx Made Easy'), 'white'))
 
 def Jokes(txt):
-    return (re.search("Why did the \w+? Because \w+", txt))
+    Joke = (re.search("Why did the \w+? Because \w+", txt))
+    if Joke:
+        print("{} was a halarious joke, hahaha.")
+    else:
+        print("The was no joke, you arent funny")
 
 def MovieTitle(txt):
     return (re.search("\w+\s\d{4}", txt))
@@ -25,7 +29,7 @@ def TVEpisodeTitles(txt):
     return ("\w+ S\d\dE\d\d: \w+")
 
 def ISBNnumbers(txt):
-    return (re.search("ISBN \d{3}-\d-\d{3}-\d{5}-\d", txt)
+    return (re.search("ISBN \d{3}-\d-\d{3}-\d{5}-\d", txt))
 # print(ISBNnumbers("ISBN 616-1-101-536790"))
 
 def TVEpisodeTitles(txt):
@@ -36,3 +40,6 @@ def HexColorCode(txt):
 
 def IPAddress(txt):
     return ("\d{3}\.\d{3}\.{3}\.{3}")  # "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$";
+
+
+Jokes("Why did the guy come here? Because je wanted to")
