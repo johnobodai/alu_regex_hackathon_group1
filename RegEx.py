@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Python regex that matches jokes that start with "Why did the....? and preceeded by Because..."
 import re
 from pyfiglet import Figlet
 from termcolor import colored
@@ -34,3 +33,5 @@ def TVEpisodeTitles(txt):
 def HexColorCode(txt):
     return ("#[a-zA-Z0-9]{6}")
 
+def IPAddress(txt):
+    return ("\d{3}\.\d{3}\.{3}\.{3}")  # "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$";
