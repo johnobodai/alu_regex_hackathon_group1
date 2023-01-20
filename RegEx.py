@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import re
+
 from pyfiglet import Figlet
 from termcolor import colored
 
