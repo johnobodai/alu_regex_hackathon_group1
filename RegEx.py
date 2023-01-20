@@ -10,3 +10,9 @@ print(colored(f.renderText('RegEx Made Easy'), 'white'))
 
 def Jokes(txt):
     return (re.search("Why did the \w+? Because \w+", txt))
+
+def MovieTitle(txt):
+    return (re.search("\w+\s\d{4}", txt))
+
+def SongLyrics(txt):
+    return (re.search("Verse \d \w+", txt))
