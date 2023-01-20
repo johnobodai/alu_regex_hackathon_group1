@@ -30,3 +30,7 @@ def ISBNnumbers(txt):
 
 def TVEpisodeTitles(txt):
     return ("\w+ S\d\dE\d\d: \w+")
+
+def HexColorCode(txt):
+    return ("#[a-zA-Z0-9]{6}")
+
