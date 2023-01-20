@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-import re
-
-#My code will be allowing user to create the twitter handles with any characters
-def Twitterusername(txt):
-    return (re.search("@\w+", txt))
 # Python regex that matches jokes that start with "Why did the....? and preceeded by Because..."
 import re
 from pyfiglet import Figlet
