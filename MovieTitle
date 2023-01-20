@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+# movie titles
+
+import re
+
+def MovieTitle(txt):
+return (re.search("\w+\s\d{4}", txt))
+
+#print(MovieTitle("whatif 2003))
