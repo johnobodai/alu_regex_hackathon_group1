@@ -16,3 +16,7 @@ def MovieTitle(txt):
 
 def SongLyrics(txt):
     return (re.search("Verse \d \w+", txt))
+
+#My code will allow twitter users to creat ther usernames using any character of their choice.
+def TwitterUsername(txt):
+    return (re.search("@\w+", txt))
