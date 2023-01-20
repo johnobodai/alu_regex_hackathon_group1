@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 # Python regex that matches jokes that start with "Why did the....? and preceeded by Because..."
 import re
 from pyfiglet import Figlet
