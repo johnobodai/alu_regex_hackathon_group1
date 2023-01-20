@@ -27,3 +27,6 @@ def TVEpisodeTitles(txt):
 def ISBNnumbers(txt):
     return (re.search("ISBN \d{3}-\d-\d{3}-\d{5}-\d", txt)
 # print(ISBNnumbers("ISBN 616-1-101-536790"))
+
+def TVEpisodeTitles(txt):
+    return ("\w+ S\d\dE\d\d: \w+")
